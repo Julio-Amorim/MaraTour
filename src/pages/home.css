@@ -1,3 +1,7 @@
+a{
+    text-decoration: none;
+}
+
 .div-main{
     width: 100%;
     display: flex;
@@ -301,5 +305,104 @@
 
     .div_01-parte-2-img{
         width: 90%;
+    }
+}
+
+
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+
+
+
+.article-pontos-turisticos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    width: 90vw;
+}
+
+.article-pontos-turisticos-conteudo h1{
+    font-family: "Popins", sans-serif;
+    color: var(--color-h1);
+    font-weight: bolder;
+
+    font-size: 2rem;
+    padding-bottom: 30px;
+}
+
+.article-pontos-turisticos-conteudo-cards{
+    display: flex;
+    flex-direction: row;
+}
+
+.card{
+    width: 18vw;
+    padding: 10px 30px;
+}
+
+.ant-card .ant-card-meta-title{
+    font-family: "Popins", sans-serif;
+    color: var(--color-p);
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1000px){
+    .article-pontos-turisticos{
+        padding: 0px 20px;
+    }
+
+    .article-pontos-turisticos-conteudo h1{
+        font-size: 1.7rem;
+    }
+
+    .article-pontos-turisticos-conteudo-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        width: 90vw;
+    }
+
+    .card{
+        width: 30vw;
+        padding: 10px 10px;
+    }
+}
+
+@media screen and (max-width: 690px){
+    .article-pontos-turisticos-conteudo h1{
+        font-size: 1.5rem;
+    }
+    .card{
+        width: 35vw;
+    }
+}
+
+@media screen and (max-width: 590px){
+    .article-pontos-turisticos-conteudo h1{
+        font-size: 1.3rem;
+    }
+
+    .article-pontos-turisticos-conteudo-cards{
+        grid-template-columns: 1fr;
+    }
+
+    .card{
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .card{
+        width: 80vw;
     }
 }
