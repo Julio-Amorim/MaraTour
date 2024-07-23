@@ -1,0 +1,305 @@
+.div-main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 40px;
+
+}
+
+
+.inicio{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+
+}
+.section_inicio{
+    width: 90%;
+
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.section_inicio_div01{
+    width: 45%;
+}
+
+.section_inicio_div01-img{
+    width: 60%;
+    padding-bottom: 20px;
+}
+
+.section_inicio_div01-p{
+    color: #5E6282;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.section_inicio_div01-buttton{
+    margin-top: 20px;
+    padding: 20px 30px;
+
+    background-color: #204181;
+    font-size: 0.8rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+}
+
+.section_inicio_div02{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.section_inicio_div02-img{
+    width: 80%;
+}  
+
+@media (max-width: 900px){
+
+    .inicio{
+        height: 100vh;
+    }
+
+    .section_inicio{
+        width: 80%;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+
+    }
+
+    .section_inicio_div01{
+        width: 100%;
+        height: 40%;
+        
+    }
+
+    .section_inicio_div01-img{
+        width: 40%;
+        padding-bottom: 20px;
+    }
+
+    .section_inicio_div02{
+        width: 50%;
+        height: 50%;
+    }
+
+    .section_inicio_div02-img{
+        width: 100%;
+    }  
+    
+}
+
+@media (max-width: 550px){
+    .section_inicio_div01-img{
+        width: 60%;
+        height: 50%;
+    }
+
+    .section_inicio_div02{
+        height: 70%;
+        width: 50%;
+    }
+
+    .section_inicio_div02-img{
+        width: 100%;
+    }  
+}
+
+
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+
+:root{
+    --color-h1: #14183E;
+    --color-p: #5E6282;
+    --color-link: #0016C4;
+}
+
+
+.article-conheca_o_maranhao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    width: 90vw;
+}
+
+.conheca_o_maranhao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    height: 100%;
+    gap: 40px;
+}
+.div_01{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+    height: 50%;
+
+}
+
+.div_01-parte-1{
+    display: flex;
+    flex-direction: column;
+
+    width: 45%;
+}
+
+.div_01-parte-1 h1{
+    font-family: "Popins", sans-serif;
+    color: var(--color-h1);
+    font-weight: 600;
+
+    font-size: 2.5rem;
+}
+
+.div_01-parte-1-semititulo{
+    padding: 20px 0 10px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Popins", sans-serif;
+    color: var(--color-h1);
+}
+
+.div_01-parte-1-descricao {
+    font-weight: 300;
+    text-align: justify;
+    font-size: 1.3rem;
+    font-family: "Inter", sans-serif;
+    color: var(--color-p);
+}
+
+.div_01-parte-2{
+    width: 50%;
+
+    display: flex;
+    justify-content: end;
+}
+
+.div_01-parte-2-img{
+    width: 75%;
+}
+
+.div_02-parte-2-descricao{
+    font-weight: 300;
+    text-align: justify;
+    font-size: 1.3rem;
+    font-family: "Inter", sans-serif;
+    color: var(--color-p);
+}
+
+.div_02-parte-2-link{
+    text-decoration: none;
+    color: var(--color-link);
+}
+
+@media (max-width: 1050px){
+    .div_01-parte-1 h1{
+        font-size: 1.8rem;
+    }
+
+    .div_01-parte-1-semititulo{
+        font-size: 1.2rem;
+    }
+    
+    .div_01-parte-1-descricao {
+        font-size: 1.2rem;        
+    }
+
+    .div_02-parte-2-descricao{
+        font-size: 1.2rem;
+    }
+
+    .div_01-parte-2{
+        width: 70%;
+    }
+}
+
+@media (max-width: 900px){
+   
+    .div-main{
+        height: auto;
+    }
+
+    .conheca_o_maranhao{
+        gap: 20px;
+    }
+
+    .div_01{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .div_01-parte-1{
+        width: 100%;
+    }
+
+    .div_01-parte-2{
+        width: 100%;
+        justify-content: center;
+    }
+    .div_01-parte-1-semititulo{
+        font-size: 1rem;
+    }
+    
+    .div_01-parte-1-descricao {
+        font-size: 1rem;        
+    }
+
+    .div_01-parte-2-img{
+        width: 50%;
+    }
+
+    .div_02-parte-2-descricao{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 550px){
+    .div_01-parte-1 h1{
+        font-size: 1.5rem;
+    }
+
+    .div_01-parte-1-semititulo{
+        font-size: 1rem;
+    }
+    
+    .div_01-parte-1-descricao {
+        font-size: 1rem;        
+    }
+
+    .div_02-parte-2-descricao{
+        font-size: 1rem;
+    }
+
+    .div_01-parte-2-img{
+        width: 90%;
+    }
+}

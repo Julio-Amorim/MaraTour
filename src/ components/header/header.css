@@ -1,0 +1,105 @@
+header{
+    padding: 20px 30px;
+    border-bottom: #dbdbdb solid 1px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.img-nav-logo{
+    width: 113px;
+}
+
+.ul_div{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.nav-links{
+    text-decoration: none;
+    color: #9A9EA6;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.div_contato{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    text-decoration: none;
+    list-style: none;
+}
+
+.div-contato-img{
+    width: 20px;
+}
+
+.div-links-contato{
+    text-decoration: none;
+    color: #204181;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.hidden{
+    display: none;
+}
+
+@media screen and (max-width: 900px){
+    nav{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .ul_ul_div{
+        display: none;
+    }
+
+    .div_contato{
+        display: none;
+    }
+
+    .nav_moba_icon{
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav_moba_icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .nav_moba_icon button img{
+        width: 30px;
+    }
+
+    .div-moba ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .nav-links{
+        display: block;
+        padding-top: 1rem;
+    }
+}
