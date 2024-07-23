@@ -1,12 +1,10 @@
-import Navigation from "./routes/routes"
-import { BrowserRouter as Router } from "react-router-dom"
+import { RouterProvider } from "react-router-dom"
+import Navigation from "./Router"
 
 function App() {
 
   return (
-      <Router>
-        <Navigation />
-      </Router>
+      <RouterProvider router={Navigation}/>
   )
 }
 
