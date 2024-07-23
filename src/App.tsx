@@ -1,13 +1,12 @@
-import { Navegation } from './routes/routes'
-import './App.css'
-import { ConfigProvider } from 'antd'
-import ptBR from "antd/locale/pt_BR"
+import Navigation from "./routes/routes"
+import { BrowserRouter as Router } from "react-router-dom"
 
 function App() {
+
   return (
-    <ConfigProvider locale={ptBR} >
-      <Navegation  />
-    </ConfigProvider>
+      <Router>
+        <Navigation />
+      </Router>
   )
 }
 
