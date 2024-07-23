@@ -1,5 +1,5 @@
 import "./header.css";
-import React, { useState } from "react";
+import { useState } from "react";
 
 export default function Header(){ 
     /*const [menuMoba, setMenuMoba] = useState<boolean>(false);
