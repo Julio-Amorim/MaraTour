@@ -1,6 +1,8 @@
 import "./header.css";
+import React, { useState } from "react";
+
 export default function Header(){ 
-    /*const [menuMoba, setMenuMoba] = useState<boolean>(false);*/
+    /*const [menuMoba, setMenuMoba] = useState<boolean>(false);
     let menuMoba = document.querySelector('.nav_moba_icon');
     let divMoba = document.querySelector('.div-moba');
 
@@ -14,7 +16,12 @@ export default function Header(){
             divMoba?.classList.add('hidden');
         }
     });
-}
+}*/
+    const [menuMoba, setMenuMoba] = useState(false);
+
+    function toggleMenu() {
+        setMenuMoba(!menuMoba);
+    }
 
     return (
         <header>
@@ -35,11 +42,11 @@ export default function Header(){
                         <img className="div-contato-img" src="" alt="" />
                         <li><a className="div-links-contato" href="#">Contato</a></li>
                     </div>
-                <div className="nav_moba_icon hidden">
-                    <button><img onClick={show} className="nav_moba_icon-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO3WwQmAQAwF0SlPt/+zC4t9RGxAZRH84DzIPTkEBiRJek8DOlDh04H16pARsGQ9nP0Xh6zAFrBk3cy54zL7P5IkSR9pZjxZ9TsCyrbMeEmSpGzNjCerfkdAnpcZL0kScw7zFAKxsVXx1wAAAABJRU5ErkJggg==" alt="Menu" /></button>
+                <div className="nav_moba_icon hidden" onClick={toggleMenu}>
+                    <button><img /*onClick={show}*/ className="nav_moba_icon-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO3WwQmAQAwF0SlPt/+zC4t9RGxAZRH84DzIPTkEBiRJek8DOlDh04H16pARsGQ9nP0Xh6zAFrBk3cy54zL7P5IkSR9pZjxZ9TsCyrbMeEmSpGzNjCerfkdAnpcZL0kScw7zFAKxsVXx1wAAAABJRU5ErkJggg==" alt="Menu" /></button>
                 </div>
             </nav> 
-            <div  className="div-moba hidden ">
+            <div className={`div-moba ${menuMoba ? '' : 'hidden'}`}  /*className="div-moba hidden"*/>
                 <ul>
                     <li><a className="nav-links" href="#">Pontos Turísticos</a></li>
                     <li><a className="nav-links" href="#">Festas Populares</a></li>

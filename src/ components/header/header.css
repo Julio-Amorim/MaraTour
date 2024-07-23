@@ -56,7 +56,11 @@ ul{
     font-weight: 500;
 }
 
-.hidden{
+.nav_moba_icon {
+    display: none;
+}
+  
+  .div-moba.hidden {
     display: none;
 }
 
