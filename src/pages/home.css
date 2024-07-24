@@ -2,6 +2,11 @@ a{
     text-decoration: none;
 }
 
+.link-saiba-mais{
+    text-decoration: none;
+    color: var(--color-link);
+}
+
 .div-main{
     width: 100%;
     display: flex;
@@ -219,11 +224,6 @@ a{
     color: var(--color-p);
 }
 
-.div_02-parte-2-link{
-    text-decoration: none;
-    color: var(--color-link);
-}
-
 @media (max-width: 1050px){
     .div_01-parte-1 h1{
         font-size: 1.8rem;
@@ -405,4 +405,93 @@ a{
     .card{
         width: 80vw;
     }
+}
+
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+
+.article-artesanato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    width: 90vw;
+}
+
+.article-artesanato h1{
+    font-family: "Popins", sans-serif;
+    color: var(--color-h1);
+    font-weight: bolder;
+
+    font-size: 2rem;
+    padding-bottom: 30px;
+}
+
+.article-artesanato p{
+    font-family: "Inter", sans-serif;
+    color: var(--color-p);
+    font-weight: 300;
+    font-size: 1.3rem;
+    text-align: justify;
+    padding-bottom: 30px;
+}
+
+.article-artesanato-conteudo-imgs{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: center;
+}
+
+.artesanato-img{
+    width: 35vw;
+}
+
+
+@media (max-width: 1050px){
+    .article-artesanato h1{
+        font-size: 1.8rem;
+
+    }
+
+    .article-artesanato p{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 900px){
+    .article-artesanato p{
+        font-size: 1rem;
+    }
+    
+    
+}
+
+@media (max-width: 590px){
+
+    .article-artesanato h1{
+        font-size: 1.5rem;
+    }    
+    
+    .article-artesanato-conteudo-imgs{
+        grid-template-columns: 1fr;
+    }
+
+    .artesanato-img{
+        width: 75vw;
+    }
+
+    .artesanato-img-hidden{
+        display: none;
+    }
+
 }

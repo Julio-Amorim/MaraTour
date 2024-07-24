@@ -3,6 +3,7 @@ import Footer from "../ components/footer/Footer";
 import { Link } from "react-router-dom";
 import { Button } from "antd";
 import { Card } from 'antd';
+import { Image } from "antd";
 const { Meta } = Card;
 
 import "./home.css";
@@ -42,7 +43,7 @@ export const Home = () => {
                             </div>
                             <div className="div_02">
                                 <p className="div_02-parte-2-descricao">A história do Maranhão é uma narrativa de resistência, adaptação e diversidade. Desde os tempos pré-coloniais até os dias atuais, o estado tem se destacado por sua capacidade de enfrentar desafios e preservar sua rica herança cultural. Hoje, o Maranhão continua a evoluir, buscando um equilíbrio entre desenvolvimento econômico e preservação de seu patrimônio histórico e ambiental.</p>
-                                <Link to="/sobre" className="div_02-parte-2-link">Saiba Mais</Link>
+                                <Link to="/sobre" className="link-saiba-mais">Saiba Mais &#x27A1;</Link>
                             </div>
                         </section>
                     </article>
@@ -80,9 +81,42 @@ export const Home = () => {
                         </section>
                     </article>
 
-                    <article>
-                        
+                    <article className="article-artesanato">
+                        <section className="article-artesanato-conteuso">
+                            <div>
+                                <div>
+                                    <h1>&#x1F58C; • Nosso Artesanato</h1>
+                                </div>
+                                <div>
+                                    <p>
+                                        O artesanato maranhense possui uma tradição de mais de 400 anos. Uma visita ao Centro Histórico de São Luís revela a diversidade de artefatos originados da produção artesanal do Maranhão, evidenciando a criatividade de uma tradição popular que vem sendo aperfeiçoada desde a fundação da capital. <br />
+                                        <Link to="/artesanato" className="link-saiba-mais">Saiba Mais &#x27A1;</Link>
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                            <div className="article-artesanato-conteudo-imgs">
+                                <div className="artesanato-img">
+                                    <Image  src="https://i.ibb.co/NKp5KHT/artesanato-01.png" />
+                                </div>
+                                
+                                <div className="artesanato-img">
+                                    <Image src="https://i.ibb.co/mXgHVzL/artesanato-02.png" />
+                                </div>
+
+                                <div className="artesanato-img artesanato-img-hidden">
+                                    <Image src="https://i.ibb.co/X8tFYHC/artesanato-03.png" />
+                                </div>
+
+                                <div className="artesanato-img artesanato-img-hidden">
+                                    <Image src="https://i.ibb.co/7QNYhcg/artesanato-04.png" />
+                                </div>
+
+                            </div>
+                        </section>
                     </article>
+
+                    <article></article>
 
                 </div>
             <Footer/>
