@@ -580,3 +580,244 @@ a{
         width: 75vw;
     }
 }
+
+
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+
+
+.article-culinaria{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    width: 90vw;
+
+    /*
+    background-color: #F7901E;
+    padding: 30px;
+    border-radius: 20px;
+    */
+}
+
+.article-culinaria h1{
+    font-family: "Popins", sans-serif;
+    color: var(--color-h1);
+    font-weight: bolder;
+
+    font-size: 2rem;
+    padding-bottom: 30px;
+}
+
+.article-culinaria p{
+    font-family: "Inter", sans-serif;
+    color: var(--color-p);
+    font-weight: 300;
+    font-size: 1.3rem;
+    text-align: justify;
+    padding-bottom: 30px;
+}
+
+.article-culinaria-conteudo{
+    display: flex;
+    align-items:center;
+
+    gap: 50px;
+    width: 100%;
+}
+
+.article-culinaria-conteudo-textos{
+    width: 45vw;
+}
+
+.article-culinaria-conteudo-img{
+    display: flex;
+    justify-content: right;
+    width: 45vw;
+}
+
+.culinaria-img{
+    width: 80%;
+}
+
+
+@media (max-width: 1050px){
+    /*
+    .article-culinaria {
+        width: 80vw;
+        background-color: #F7901E;
+        padding: 20px;
+        border-radius: 20px;
+    }*/
+
+    .article-culinaria h1{
+        font-size: 1.8rem;
+    }
+
+    .article-culinaria p{
+        font-size: 1.2rem;
+    }
+
+    .culinaria-img{
+        width: 90%;
+    }
+}
+
+@media (max-width: 900px){
+    .article-culinaria h1{
+        font-size: 1.5rem;
+    }
+
+    .article-culinaria p{
+        font-size: 1rem;
+    }
+    
+    
+}
+
+@media (max-width: 730px){
+    .article-culinaria h1{
+        font-size: 1.3rem;
+    }
+}
+
+
+@media (max-width: 590px){
+
+    .article-culinaria-conteudo{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .article-culinaria-conteudo-textos{
+        width: 80vw;
+    }
+    
+    .article-culinaria-conteudo-img{
+        justify-content: center;
+        width: 80vw;
+    }
+
+    .culinaria-img{
+        width: 75vw;
+    }
+}
+
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+
+
+.article-galeria{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    width: 90vw;
+
+    /*
+    background-color: #F7901E;
+    padding: 30px;
+    border-radius: 20px;
+    */
+}
+
+.article-galeria-conteudo{
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+    width: 100%;
+}
+
+.article-galeria h1{
+    font-family: "Popins", sans-serif;
+    color: var(--color-h1);
+    font-weight: bolder;
+
+    font-size: 2rem;
+}
+
+.article-galeria p{
+    font-family: "Inter", sans-serif;
+    color: var(--color-p);
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+.article-galeria-conteudo-galeria{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.galeria-img{
+    width: 80%;
+}
+
+
+@media (max-width: 1050px){
+
+    .article-galeria h1{
+        font-size: 1.8rem;
+    }
+
+    .article-galeria p{
+        font-size: 1.2rem;
+    }
+
+    .galeria-img{
+        width: 90%;
+    }
+}
+
+@media (max-width: 900px){
+    .article-galeria h1{
+        font-size: 1.5rem;
+    }
+
+    .article-galeria p{
+        font-size: 1rem;
+    }
+    
+    
+}
+
+@media (max-width: 730px){
+    .article-galeria h1{
+        font-size: 1.3rem;
+    }
+}
+
+
+@media (max-width: 590px){
+
+    .article-galeria-conteudo{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .article-galeria-conteudo-textos{
+        width: 80vw;
+    }
+    
+    .article-galeria-conteudo-img{
+        justify-content: center;
+        width: 80vw;
+    }
+
+    .galeria-img{
+        width: 75vw;
+    }
+}

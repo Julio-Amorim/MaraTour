@@ -1,5 +1,7 @@
 import Header from "../ components/header/Header";
 import Footer from "../ components/footer/Footer";
+import Galeria from "../ components/galeria/Galeria";
+
 import { Link } from "react-router-dom";
 import { Button } from "antd";
 import { Card } from 'antd';
@@ -8,8 +10,8 @@ const { Meta } = Card;
 
 import "./home.css";
 
-
 export const Home = () => {
+
     return (
         <main>
             <Header/>
@@ -28,7 +30,7 @@ export const Home = () => {
                             </div>
                         </section>
                     </article>
-
+ 
                     <article className="article-conheca_o_maranhao" id="article-conheca_o_maranhao">
                         <section className="conheca_o_maranhao">
                             <div className="div_01">
@@ -138,6 +140,39 @@ export const Home = () => {
                                     <Image src="https://i.ibb.co/HhvWcMF/festa-02.png" />
                                 </div>
                             </div>
+                        </section>
+                    </article>
+
+                    <article className="article-culinaria" id="article-culinaria">
+                        <section className="article-culinaria-conteudo">
+                            <div className="article-culinaria-conteudo-textos">
+                                <h1>&#x1F958; • Culinária Maranhense</h1>
+                                <p>
+                                    A culinária maranhense é um fascinante reflexo da rica diversidade cultural e histórica do Maranhão, um estado localizado no Nordeste do Brasil. Influenciada por tradições indígenas, africanas e europeias, a gastronomia maranhense oferece uma experiência culinária única e autêntica que encanta paladares de todo o país e do mundo. <br />
+                                    <Link to="/" className="link-saiba-mais">Saiba Mais &#x27A1;</Link>
+                                </p>
+                            </div>
+                            <div className="article-culinaria-conteudo-img">
+                                <img className="culinaria-img" src="https://i.ibb.co/nfBjby3/comida-01.png" alt="" />
+                            </div>
+                        </section>
+                    </article>
+
+                    <article className="article-galeria" id="article-galeria">
+                        <section className="article-galeria-conteudo">
+                            <div>
+                                <h1>&#x1F4F7; • Galeria de fotos</h1>
+                                <p>&#x1F31F; Clique na foto e encante-se com as maravilhas do Maranhão! &#x1F3DE; &#x2728;</p>
+                            </div>
+                            <div className="article-galeria-conteudo-galeria">
+                                <Galeria/>
+                            </div>
+                        </section>
+                    </article>
+
+                    <article className="article-contato">
+                        <section className="article-contato-conteudo">
+
                         </section>
                     </article>
 

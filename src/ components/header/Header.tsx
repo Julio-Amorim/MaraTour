@@ -37,13 +37,13 @@ export default function Header(){
                         <li><a className="nav-links" href="#article-pontos-turisticos">Pontos Turísticos</a></li>
                         <li><a className="nav-links" href="#article-artesanato">Artesanato</a></li>
                         <li><a className="nav-links" href="#article-festa">Festas Populares</a></li>
-                        <li><a className="nav-links" href="#">Culinária</a></li>
-                        <li><a className="nav-links" href="#">Galeria</a></li>
+                        <li><a className="nav-links" href="#article-culinaria">Culinária</a></li>
+                        <li><a className="nav-links" href="#article-galeria">Galeria</a></li>
                     </div>
                 </ul>
                 <div className="div_contato">
                         <img className="div-contato-img" src="" alt="" />
-                        <li><a className="nav-links" href="#">Contato</a></li>
+                        <li><a className="nav-links" href="#article-contato">Contato</a></li>
                     </div>
                 <div className="nav_moba_icon hidden" onClick={show}>
                     <button><img /*onClick={show}*/ className="nav_moba_icon-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO3WwQmAQAwF0SlPt/+zC4t9RGxAZRH84DzIPTkEBiRJek8DOlDh04H16pARsGQ9nP0Xh6zAFrBk3cy54zL7P5IkSR9pZjxZ9TsCyrbMeEmSpGzNjCerfkdAnpcZL0kScw7zFAKxsVXx1wAAAABJRU5ErkJggg==" alt="Menu" /></button>
@@ -54,9 +54,9 @@ export default function Header(){
                     <li><a className="nav-links" href="#article-pontos-turisticos">Pontos Turísticos</a></li>
                     <li><a className="nav-links" href="#article-artesanato">Artesanato</a></li>
                     <li><a className="nav-links" href="#article-festa">Festas Populares</a></li>
-                    <li><a className="nav-links" href="#">Culinária</a></li>
-                    <li><a className="nav-links" href="#">Galeria</a></li>
-                    <li><a className="nav-links" href="#">Contato</a></li>
+                    <li><a className="nav-links" href="#article-culinaria">Culinária</a></li>
+                    <li><a className="nav-links" href="#article-galeria">Galeria</a></li>
+                    <li><a className="nav-links" href="#article-contato">Contato</a></li>
                 </ul>         
             </div>
         </header>
