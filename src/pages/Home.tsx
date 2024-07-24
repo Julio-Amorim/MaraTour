@@ -9,13 +9,47 @@ import { Image } from "antd";
 const { Meta } = Card;
 
 import "./home.css";
+import { useState } from "react";
+//import emailjs from "@emailjs/browser";
 
 export const Home = () => {
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [message, setMessage] = useState('')
+
+    /*function sendEmail(event: { preventDefault: () => void; }) {
+        event.preventDefault()
+
+        if (name === "" || email === "" || message === "") {
+            alert("Preencha todos os campos")
+            return;
+        }
+
+        const templateParams = {
+            from_name: name,
+            email: email,
+            message: message,
+        }
+        
+        //const form = document.getElementById('form') as HTMLFormElement; // Replace 'your-form-id' with the actual ID of your form element
+        emailjs.sendForm('service_s0t5m4e', 'template_dqjtz1s', templateParams, 'ycH31FWLgjN8fPddN')
+            .then((response: { text: string; }) => {
+                console.log(response.text);
+                alert("Mensagem enviada com sucesso!")
+                setName('')
+                setEmail('')
+                setMessage('')
+            }, (error: { text: string; }) => {
+                console.log(error.text);
+            });
+
+    }*/
 
     return (
         <main>
             <Header/>
                 <div className="div-main">
+
                     <article className="inicio" id="inicio"> 
                         <section className="section_inicio">
                             <div className="section_inicio_div01">
@@ -126,7 +160,7 @@ export const Home = () => {
                                 <div>
                                     <p>
                                     O Bumba-Meu-Boi é a principal manifestação cultural do Maranhão, conhecido por seu espetáculo de cores, danças e ritmos. Reconhecido como Patrimônio Imaterial do Brasil, incorpora elementos africanos e europeus, principalmente religiosos. As comemorações e preparativos duram o ano inteiro, culminando nos festejos juninos, quando atrai multidões. Durante o período junino, São Luís se transforma em um grande arraial com apresentações culturais, danças típicas e comidas tradicionais. Além disso, a Festa do Divino Espírito Santo, celebrada em maio desde os tempos coloniais, combina devoção religiosa com homenagens ao Império, destacando a visita do "imperador" e sua corte às casas dos festeiros. <br />
-                                        <Link to="/" className="link-saiba-mais">Saiba Mais &#x27A1;</Link>
+                                        <Link to="/festas" className="link-saiba-mais">Saiba Mais &#x27A1;</Link>
                                     </p>
                                     
                                 </div>
@@ -149,7 +183,7 @@ export const Home = () => {
                                 <h1>&#x1F958; • Culinária Maranhense</h1>
                                 <p>
                                     A culinária maranhense é um fascinante reflexo da rica diversidade cultural e histórica do Maranhão, um estado localizado no Nordeste do Brasil. Influenciada por tradições indígenas, africanas e europeias, a gastronomia maranhense oferece uma experiência culinária única e autêntica que encanta paladares de todo o país e do mundo. <br />
-                                    <Link to="/" className="link-saiba-mais">Saiba Mais &#x27A1;</Link>
+                                    <Link to="/culinaria" className="link-saiba-mais">Saiba Mais &#x27A1;</Link>
                                 </p>
                             </div>
                             <div className="article-culinaria-conteudo-img">
@@ -170,11 +204,26 @@ export const Home = () => {
                         </section>
                     </article>
 
-                    <article className="article-contato">
+                    <article id="article-contato" className="article-contato">
                         <section className="article-contato-conteudo">
+                            <div className="">
+                                <h1>&#x1F4E9; • Contato</h1>
+                            </div>
+                            <div className="article-contato-conteudo-contato">
+                                <form id="form" className="form" /*onSubmit={sendEmail}*/>
+                                    <input className="input" type="text" placeholder="Digite seu nome" onChange={(e) => setName(e.target.value)} value={name} />
+                                    
+                                    <input className="input" type="text" placeholder="Digite seu email" onChange={(e) => setEmail(e.target.value)} value={email} />
 
+                                    <textarea className="textarea" placeholder="Digite sua mensagem..." onChange={(e) => setMessage(e.target.value)} value={message} />
+
+                                    <input className="button" type="submit" value="Enviar" />
+                                </form>
+                            </div>
                         </section>
                     </article>
+
+                    <br />
 
                 </div>
             <Footer/>

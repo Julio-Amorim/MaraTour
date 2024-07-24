@@ -822,3 +822,148 @@ a{
         width: 75vw;
     }
 }
+
+
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+
+
+.article-contato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    width: 60vw;
+
+    
+    background-color: #bfbfbf59;
+    padding: 30px;
+    border-radius: 20px;
+    
+}
+
+.article-contato-conteudo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.article-contato h1{
+    font-family: "Popins", sans-serif;
+    color: var(--color-h1);
+    font-weight: bolder;
+
+    font-size: 2rem;
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+  }
+  
+  .input{
+    margin-bottom: 14px;
+    height: 34px;
+    width: 40vw;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 8px;
+  }
+  
+  .textarea{
+    margin-bottom: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+
+    padding: 8px;
+    height: 94px;
+    width: 40vw;
+
+    resize: none;
+  }
+  
+  .button{
+    height: 34px;
+    width: 10vw;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    background-color: #204181;
+    font-size: 18px;
+    transition: background-color, transform 0.8s;
+
+    color: white;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .button:hover{
+    background-color: #14183E;
+    color: white;
+    transform: scale(1.01);
+  }
+
+
+
+
+@media (max-width: 1050px){
+
+    .article-contato{
+        width: 80vw;
+    }
+
+    .article-contato h1{
+        font-size: 1.8rem;
+    }
+
+    .input{
+        width: 60vw;
+    }
+
+    .textarea{
+        width: 60vw;
+    }
+}
+
+@media (max-width: 900px){
+    .article-contato h1{
+        font-size: 1.5rem;
+    }
+
+    .input{
+        width: 70vw;
+    }
+
+    .textarea{
+        width: 70vw;
+    }
+
+    .button{
+        width: 30vw;
+    }
+    
+}
+
+@media (max-width: 730px){
+    .article-contato h1{
+        font-size: 1.3rem;
+    }
+}
+
+
+@media (max-width: 590px){
+
+}
