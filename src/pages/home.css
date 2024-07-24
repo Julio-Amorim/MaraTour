@@ -495,3 +495,88 @@ a{
     }
 
 }
+
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+
+
+.article-festa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    width: 90vw;
+}
+
+.article-festa h1{
+    font-family: "Popins", sans-serif;
+    color: var(--color-h1);
+    font-weight: bolder;
+
+    font-size: 2rem;
+    padding-bottom: 30px;
+}
+
+.article-festa p{
+    font-family: "Inter", sans-serif;
+    color: var(--color-p);
+    font-weight: 300;
+    font-size: 1.3rem;
+    text-align: justify;
+    padding-bottom: 30px;
+}
+
+.article-festa-conteudo-imgs{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: center;
+}
+
+.festa-img{
+    width: 35vw;
+}
+
+
+@media (max-width: 1050px){
+    .article-festa h1{
+        font-size: 1.8rem;
+
+    }
+
+    .article-festa p{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 900px){
+    .article-festa p{
+        font-size: 1rem;
+    }
+    
+    
+}
+
+@media (max-width: 590px){
+
+    .article-festa h1{
+        font-size: 1.5rem;
+    }    
+    
+    .article-festa-conteudo-imgs{
+        grid-template-columns: 1fr;
+    }
+
+    .festa-img{
+        width: 75vw;
+    }
+}

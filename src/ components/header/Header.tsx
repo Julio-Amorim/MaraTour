@@ -34,28 +34,16 @@ export default function Header(){
                     </div>
                 <ul className="ul_ul_div">
                     <div className="ul_div">
-                        <Link className="nav-links" to="/pontosTuristicos">
-                            <li>Pontos Turísticos</li>
-                        </Link>
-                        <Link className="nav-links" to="/">
-                            <li>Festas Populares</li>
-                        </Link>
-                        <Link className="nav-links" to="/artesanato">
-                            <li>Artesanato</li>
-                        </Link>
-                        <Link className="nav-links" to="/">
-                            <li>Culinária</li>
-                        </Link>
-                        <Link className="nav-links" to="/">
-                            <li>Galeria</li>
-                        </Link>
+                        <li><a className="nav-links" href="#article-pontos-turisticos">Pontos Turísticos</a></li>
+                        <li><a className="nav-links" href="#article-artesanato">Artesanato</a></li>
+                        <li><a className="nav-links" href="#article-festa">Festas Populares</a></li>
+                        <li><a className="nav-links" href="#">Culinária</a></li>
+                        <li><a className="nav-links" href="#">Galeria</a></li>
                     </div>
                 </ul>
                 <div className="div_contato">
                         <img className="div-contato-img" src="" alt="" />
-                        <Link className="div-links-contato" to="/">
-                            <li>Contato</li>
-                        </Link>
+                        <li><a className="nav-links" href="#">Contato</a></li>
                     </div>
                 <div className="nav_moba_icon hidden" onClick={show}>
                     <button><img /*onClick={show}*/ className="nav_moba_icon-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAZ0lEQVR4nO3WwQmAQAwF0SlPt/+zC4t9RGxAZRH84DzIPTkEBiRJek8DOlDh04H16pARsGQ9nP0Xh6zAFrBk3cy54zL7P5IkSR9pZjxZ9TsCyrbMeEmSpGzNjCerfkdAnpcZL0kScw7zFAKxsVXx1wAAAABJRU5ErkJggg==" alt="Menu" /></button>
@@ -63,24 +51,12 @@ export default function Header(){
             </nav> 
             <div className={`div-moba ${menuMoba ? '' : 'hidden'}`}  /*className="div-moba hidden"*/>
                 <ul>
-                <Link className="nav-links" to="/pontosTuristicos">
-                            <li>Pontos Turísticos</li>
-                        </Link>
-                        <Link className="nav-links" to="/">
-                            <li>Festas Populares</li>
-                        </Link>
-                        <Link className="nav-links" to="/artesanato">
-                            <li>Artesanato</li>
-                        </Link>
-                        <Link className="nav-links" to="/">
-                            <li>Culinária</li>
-                        </Link>
-                        <Link className="nav-links" to="/">
-                            <li>Galeria</li>
-                        </Link>
-                        <Link className="div-links-contato" to="/">
-                            <li>Contato</li>
-                        </Link>
+                    <li><a className="nav-links" href="#article-pontos-turisticos">Pontos Turísticos</a></li>
+                    <li><a className="nav-links" href="#article-artesanato">Artesanato</a></li>
+                    <li><a className="nav-links" href="#article-festa">Festas Populares</a></li>
+                    <li><a className="nav-links" href="#">Culinária</a></li>
+                    <li><a className="nav-links" href="#">Galeria</a></li>
+                    <li><a className="nav-links" href="#">Contato</a></li>
                 </ul>         
             </div>
         </header>
