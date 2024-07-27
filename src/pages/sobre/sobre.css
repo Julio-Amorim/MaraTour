@@ -9,18 +9,18 @@
 
     h2 {
         font-family: "Poppins", sans-serif;
-        font-size: 38px;
-        color: #14183E;
+        font-size: 36px;
+        color: #14183e;
         text-align: center;
     }
     h3 {
-        color: #161A40;
-        font-size: 28px;
+        color: #161a40;
+        font-size: 24px;
         font-family: "Poppins", sans-serif;
     }
 
     p {
-        font-size: 24px;
+        font-size: 20px;
         font-family: "inter", sans-serif;
         text-align: justify;
         color: #5e6282;
@@ -63,6 +63,7 @@
             margin-bottom: 40px;
             p {
                 margin: 0;
+                font-size: 16px;
             }
 
             .div-img {

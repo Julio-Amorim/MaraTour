@@ -12,16 +12,14 @@ h2 {
     margin-bottom: 80px;
 
     p {
-        font-size: 24px;
+        font-size: 20px;
         font-family: "inter", sans-serif;
         text-align: justify;
         color: #5e6282;
         font-weight: 500;
-  
     }
 
     img {
-  
         width: 100%;
     }
 
@@ -57,6 +55,7 @@ h2 {
             margin-bottom: 40px;
             p {
                 margin: 0;
+                font-size: 16px;
             }
 
             .div-img {
