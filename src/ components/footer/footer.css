@@ -35,8 +35,19 @@ footer{
 
 @media (max-width: 550px){
     footer{
-        height: 7vh;
+        height: 8vh;
         font-size: 0.5rem;
+    }
+
+    .img-footer-logo{
+        width: 60px;
+    }
+}
+
+@media (max-width: 470px){
+    footer{
+        height: 9vh;
+        font-size: 0.4rem;
     }
 
     .img-footer-logo{
